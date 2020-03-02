@@ -2,6 +2,8 @@ import discord
 from discord.ext import commands
 import asyncio,time,random,logging,json
 
+TOKEN = "TOKEN"
+
 logging.basicConfig(level=logging.INFO)
 game = discord.Game("Starting Up!")
 bot = commands.Bot(command_prefix="typ",description="Pokémon Type Advantages!",activity=game)
@@ -113,4 +115,4 @@ async def pokemon(ctx,pokemon):
     await ctx.send(embed = embed)
     f.flush()
 
-bot.run("NTc4NjEzODQ1MTExNzM0Mjg0.XlwdTg.Sj0towjunh6kKx456BLVM8CVAH0")
+bot.run(TOKEN)
